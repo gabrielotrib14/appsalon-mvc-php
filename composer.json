@@ -1,0 +1,22 @@
+{
+    "name": "admin/app-salon_php_mvc_js_sass",
+    "description": "Proyecto PHP, MVC, SQL, Gulp",
+    "type": "proyect",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controller\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "\"Gabriel Brito\""
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

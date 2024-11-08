@@ -1,0 +1,47 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.contenido-resumen{
+
+    p{
+        font-size: 2rem;
+    }
+     
+    span{
+        color: v.$azul;
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .precio-total{
+        display: block;
+        padding: 3rem 0 3rem  0;
+        margin: 0;
+        border-bottom: 1px solid v.$gris;
+        text-align: center;
+        font-size: 2.4rem;
+        
+        span{
+            font-size: 2.8rem;
+        }
+
+    }
+
+    .heading-informacion{
+         margin: 5rem 0;
+    }
+
+    @include m.tablet{
+        .boton-reservar{
+            margin: 5rem auto 0 auto
+        }
+    }
+
+}
+
+.contenedor-servicios{
+    border-bottom: 1px solid v.$gris;
+    padding: 3rem 0;
+}
+

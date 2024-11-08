@@ -1,0 +1,42 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.formulario{
+    margin-top: v.$separacion;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    grid-column: 1 / 3;
+
+
+    label{
+        flex: 0 0 10rem;
+    }
+
+    input{
+        flex: 1;
+        border: none;
+        padding: calc(v.$separacion/4);
+        border-radius: 1rem;
+
+        &:disabled{
+            background-color: lighten( v.$negro, 30%);
+            color: #fff;
+            cursor: not-allowed;
+        }
+        
+    }
+
+    .wd-15{
+        flex: 0 0 15rem;
+    }
+}
+
